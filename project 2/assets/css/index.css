@@ -101,10 +101,13 @@ section{
 .nav .homepage:hover h1{
     color:white;
 }
-.header .hanoi-img {
-    width: 1500px;
+.autoslide {
+    width: 78%;
     display: block;
     margin: 0 auto;
+}
+.autoslide img{
+    width: 100%;
 }
 
 /*body*/
