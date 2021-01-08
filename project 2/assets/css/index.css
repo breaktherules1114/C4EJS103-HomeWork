@@ -186,8 +186,14 @@ section{
 .splide__slide{
     text-decoration: none;
     border-radius: 5%;
-    background-color: #fff;
+    
     width: 366px;
+    margin-right: 12px;
+}
+.shopping-mall{
+    width: 366px;
+    background-color: #fff;
+    border-radius: 5%;
 }
 .splide__slide img{
     border-top-left-radius: 5%;
@@ -196,8 +202,13 @@ section{
 .splide__slide h4{
     color: #ffa4d1;
     margin-top: 5px;
-    margin-left: 3px;
+    padding-left: 3px;
     text-decoration: none;
+}
+.splide__slide p{
+    font-size: 110%;
+    margin: 15px 3px;
+    padding: 5px 5px;
 }
 /*.shopping .shopping-menu ul a img{
     border-top-left-radius: 5%;
