@@ -10,11 +10,12 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 3 seconds
+  setTimeout(carousel, 3000); 
 }
 function search() {
   console.log("2")
 }
+// đổi màu
 function bgChanger(){
   if (this.scrollY > this.innerHeight / 2){
     document.body.classList.add("bg-active-one");
@@ -28,3 +29,4 @@ function bgChanger(){
   }
 }
 window.addEventListener("scroll", bgChanger);
+
