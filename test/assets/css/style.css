@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffedf6;
+    transition: all 0.5s ease;
+        
+}
+.mobile{
+    display: none;
+}
+
+/*nav*/
+.nav{
+    height: 50px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 1px 0px 7px #ffa4d1;
+    list-style: none;
+}
+.nav > .nor-nav{
+    
+    padding: 5px 10px;
+    width: 100vw;
+    max-width: 1903px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul a{
+    height: 40px;
+    line-height: 40px;
+    color:#ee7cb5;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0 10px;
+}
+.nav ul a:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #ffa4d0;
+    transition: 0.3s;
+}
+.mobile-nav{
+    padding: 5px 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*welcome*/
+.welcome{
+    position: relative;
+}
+.background-img{
+    width: 100%;
+}
+.description{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    padding: 20px 35px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5%;
+    cursor:default;
+    max-width: 30vw;
+}
+.description:hover{
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 8px #442607b4;
+    transition: 0.5s;
+}
+.description h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff9d42;
+}
+.description p{
+    color: #ff9d42;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.item  {
+    min-height: 200px;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .pc {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    .description h3{
+        font-size: 25px;
+    }
+    .description p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .tablet, .pc{
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .header .nav .nor-nav{
+        justify-content: space-around;
+    }
+    .description h3{
+        font-size: 20px;
+    }
+    .description p{
+        font-size: 10px;
+    }
+    .description{
+        top:40%
+    }
+}    
