@@ -194,6 +194,7 @@ section{
     width: 366px;
     background-color: #fff;
     border-radius: 5%;
+    height: 380px;
 }
 .splide__slide img{
     border-top-left-radius: 5%;
